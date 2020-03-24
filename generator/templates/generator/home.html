@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div class="container text-center">
+    <h1>Password Generator</h1>
+
+    <form action="password">
+
+        <label for="length">Choose length:</label>
+
+        <select id='length', name="length">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10" selected="selected">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+        </select>
+        <br>
+        <input type="checkbox" name="uppercase"> Uppercase
+        <br>
+        <select id='nupper', name="nupper">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        <input type="checkbox" name="numbers"> Numbers
+        <br>
+        <select id='nnum', name="nnum">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        <input type="checkbox" name="special"> Special Characters
+        <br>
+        <select id='nspecial', name="nspecial">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+        </select>
+        <br>
+
+        <input type="submit", value="Generate Password" class="btn btn-primary">
+    </form>
+</div>
